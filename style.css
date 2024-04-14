@@ -24,7 +24,13 @@ body{
 #app {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
+    grid-template-areas: 
+    "A A A"
+    "B B B"
+    "C C C"
+    "D D D";
     height: 100vh;
+
 }
 
 header {
@@ -33,6 +39,8 @@ header {
     gap: 2.5rem;
 
     background: var(--color-base-blue-turquoise-200);
+
+    grid-area: A;
 }
 
 header form{
@@ -40,7 +48,7 @@ header form{
 }
 
 .container{
-    padding: 1.6rem 11rem;
+    padding: 1.6rem 2.8rem;
     width: min(176rem, 100%);
     margin: 0 auto;
 }
@@ -73,8 +81,15 @@ header form{
     height: 4.2rem;
 }
 
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
 footer{
     background-color: var(--color-base-blue-turquoise-100);
+    grid-area: D;
 }
 
 footer p{
