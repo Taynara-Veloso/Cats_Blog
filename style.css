@@ -72,3 +72,13 @@ header form{
     width: 4.2rem;
     height: 4.2rem;
 }
+
+footer{
+    background-color: var(--color-base-blue-turquoise-100);
+}
+
+footer p{
+    text-align: center;
+    color: var(--color-base-white);
+    font-weight: 600;
+}
