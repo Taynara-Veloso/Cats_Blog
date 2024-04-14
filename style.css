@@ -92,8 +92,44 @@ main {
     flex-direction: column;
 }
 
+.content_focus{
+    padding: 0 2.2rem;
+    margin: 0 auto;
+}
+
 .main_focus{
     grid-area: B;
+}
+
+.img_focus{
+    height: 30.0rem;
+    object-fit: cover;
+} 
+
+.title_focus {
+    padding: 3.1rem 0;
+}
+
+.title_focus h1{
+    padding-bottom: 0.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+}
+
+.title_focus img {
+    padding-right: 1.2rem;
+}
+
+.text_focus {
+    width: 38.2rem;
+}
+
+.text_focus p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    padding-bottom: 3.1rem;
 }
 
 .main_news{
