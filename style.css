@@ -87,6 +87,19 @@ main {
     flex-direction: column;
 }
 
+#main_container > *{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_focus{
+    grid-area: B;
+}
+
+.main_news{
+    grid-area: C;
+}
+
 footer{
     background-color: var(--color-base-blue-turquoise-100);
     grid-area: D;
