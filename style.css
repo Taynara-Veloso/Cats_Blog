@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-blue-turquoise-100: #387E96;
+    --color-base-blue-turquoise-200: #065E7C;
+    --color-base-white: #ffffff;
+    --color-base-white-100: #F4FCFF;
+    --color-base-black-100: #121214;
+    --color-base-black-200: #202024;
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Mulish", sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    background: var(--color-base-blue-turquoise-200);
+}
+
+header form{
+    flex: 1;
+}
+
+.container{
+    padding: 1.6rem 11rem;
+    width: min(176rem, 100%);
+    margin: 0 auto;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    background: var(--color-base-white);
+    opacity: 0.2;
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 1.2rem 1.4rem;
+}
+
+.input-wrapper input::placeholder {
+    opacity: 1;
+    font-weight: 600;
+}
+
+.user_photo {
+    width: 4.2rem;
+    height: 4.2rem;
+}
