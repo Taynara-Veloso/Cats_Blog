@@ -182,10 +182,28 @@ h1{
 footer{
     background-color: var(--color-base-blue-turquoise-100);
     grid-area: D;
+
 }
 
 footer p{
     text-align: center;
     color: var(--color-base-white);
     font-weight: 600;
+
+    --startY: 100%;
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+header img, 
+.input-wrapper{
+    --startY: -100%;
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
 }
