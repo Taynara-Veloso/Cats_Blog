@@ -7,12 +7,13 @@
 :root {
     font-size: 62.5%;
 
-    --color-base-blue-turquoise-100: #387E96;
-    --color-base-blue-turquoise-200: #065E7C;
-    --color-base-white: #ffffff;
-    --color-base-white-100: #F4FCFF;
-    --color-base-black-100: #121214;
-    --color-base-black-200: #202024;
+    --hue: 195;
+    --color-base-blue-turquoise-100: hsl(var(--hue), 46%, 40%);
+    --color-base-blue-turquoise-200: hsl(var(--hue), 91%, 25%);
+    --color-base-white: hsl(0, 0%, 100%);
+    --color-base-white-100: hsl(196, 100%, 98%);
+    --color-base-black-100: hsl(240, 5%, 7%);
+    --color-base-black-200: hsl(240, 6%, 13%);
 
 }
 
