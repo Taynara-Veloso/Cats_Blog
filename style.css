@@ -206,6 +206,25 @@ header img,
     }
 }
 
+.item_news{
+    --delay: .4s;
+    animation-name: cards_animation;
+    animation-duration: .4s;
+    animation-delay: var(--delay);
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes cards_animation {
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
 @media (min-width: 1024px) {
 
     #app {
@@ -217,7 +236,7 @@ header img,
     }
     
     .container{
-        padding: 1.6rem 11.2rem;
+        padding: 1.6rem 10rem 1.6rem 8rem;
     }
     
     #main_container{
